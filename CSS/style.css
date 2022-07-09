@@ -16,14 +16,20 @@ header a:hover {
     opacity: .6;
 }
 
-.background video {
-    width: 100%;
+.presentation {
+    margin: 3em 4em;
 }
 
-.presentation h4 {
-    margin: 50px 30px;
-    font-family: arial;
-    max-width: 50%;
+.presentation p {
+    max-width: 60%;
+    font-size: 2em;
+    font-family: sans-serif;
+    margin-bottom: 12em;
+}
+.presentation img {
+    float: right;
+    margin-right: 45px;
+    
 }
 
 .languages h2 {
@@ -43,6 +49,17 @@ header a:hover {
 .languages-row img {
     margin: 3em;
 }
+
+.hobbies-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+  }
+
+  .hobbies-row h4 {
+    display: static;
+  }
 
 .hobbies h2 {
     margin: 3em 2em;
