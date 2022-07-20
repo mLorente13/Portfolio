@@ -5,10 +5,11 @@
 
 header {
     background: rgb(88, 90, 90);
+    height: 7vh;
 }
 
 header a {
-    padding: 20px;
+    margin: 30px 16px 5px 16px;
 }
 
 header a:hover {
@@ -22,9 +23,9 @@ header a:hover {
 
 .presentation p {
     max-width: 60%;
-    font-size: 2em;
+    font-size: 1em;
     font-family: sans-serif;
-    margin-bottom: 12em;
+    margin-bottom: 27%;
 }
 .presentation img {
     float: right;
@@ -36,7 +37,7 @@ header a:hover {
     text-align: center;
     font-family: sans-serif;
     font-size: 2em;
-    margin: 3em 2em;
+    margin: 1em 2em;
 }
 
 .languages-row {
@@ -47,32 +48,29 @@ header a:hover {
   }
 
 .languages-row img {
-    margin: 3em;
+    margin: 0 5vw 5vh 0;
 }
 
-.hobbies-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: center;
-  }
-
-  .hobbies-row h4 {
-    display: static;
-  }
-
-.hobbies h2 {
-    margin: 3em 2em;
+.hobbies {
     text-align: center;
-    font-size: 2em;
     font-family: sans-serif;
+}
+
+.hobbies img {
+    margin: 5vh 5vw
+}
+
+.hobbies h4 {
+    display: inline;
+    text-align: center;
 }
 
 .contact-form {
     text-align: center;
-    background: rgb(95, 95, 95);
+    background: #141458;
     font-family: sans-serif;
     padding: 3em;
+    color: #ffffff
 }
 
 .contact-form h2{
@@ -83,21 +81,34 @@ header a:hover {
     margin: 1em;
     width: 20em;
     text-align: center;
+    border-radius: 5px;
+    height: 2em;
+    width: 25vw;
 }
 
 .contact-form textarea {
-    width: 32em;
+    width: 25vw;
     height: 12em;
     resize: none;
     margin: 1em;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 10vw;
+    height: 4vh;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
 footer {
     background-color: #000;
-    color: #fff;
-    padding: 2em;
+    color: #ffffff;
+    padding: 1em 1em;
+    font-family: sans-serif;
 }
 
 footer img {
-    margin-right: 1em;
+    margin: 13px 1em 13px 0;
 }
