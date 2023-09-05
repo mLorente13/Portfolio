@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primaryColor: #333;
+    --secondaryColor: #00e1f1;
+    --terciaryColor: #eee;
+    --primaryFont: 'Roboto';
+    --fallbackFont: 'Lato'
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primaryColor);
+    font-family: var(--primaryFont, --secondaryColor);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.headerLogo {
+    font-size: 1.5rem;
+}
+
+.headerLogo-link {
+    color: var(--secondaryColor);
+    text-decoration: none;
+}
+
+.headerLogo:hover .headerLogo-span {
+    color: var(--secondaryColor);
+    transition: color .3s ease;
+}
+
+.headerLogo-span {
+    color: var(--terciaryColor);
+}
+
+.headerLinks {
+    display: flex;
+}
+
+.headerLinks-link {
+    color: var(--terciaryColor);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.headerLinks-link::after {
+    content: '';
+    position: relative;
+    
+    display: block;
+    width: 0%;
+    height: 5px;
+    background-color: var(--secondaryColor);
+    transition: width .3s ease-in-out;
+}
+
+.headerLinks-link:hover.headerLinks-link::after {
+    width: 100%;
+}
