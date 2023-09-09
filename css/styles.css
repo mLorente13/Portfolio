@@ -1,71 +1,287 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 :root {
-    --primaryColor: #333;
-    --secondaryColor: #00e1f1;
-    --terciaryColor: #eee;
-    --primaryFont: 'Roboto';
-    --fallbackFont: 'Lato'
+  --primaryColor: #333;
+  --secondaryColor: #00e1f1;
+  --terciaryColor: #eee;
+  --primaryFont: "Roboto";
+  --fallbackFont: "Lato";
+}
+
+* {
+    scroll-behavior: smooth;
 }
 
 body {
-    width: 100dvw;
-    height: 100dvh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--primaryColor);
-    font-family: var(--primaryFont, --secondaryColor);
+  width: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--primaryColor);
+  font-family: var(--primaryFont, --secondaryColor);
+  color: var(--terciaryColor);
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
 }
 
 .headerLogo {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .headerLogo-link {
-    color: var(--secondaryColor);
-    text-decoration: none;
+  color: var(--secondaryColor);
+  text-decoration: none;
 }
 
 .headerLogo:hover .headerLogo-span {
-    color: var(--secondaryColor);
-    transition: color .3s ease;
+  color: var(--secondaryColor);
+  transition: color 0.3s ease;
 }
 
 .headerLogo-span {
-    color: var(--terciaryColor);
+  color: var(--terciaryColor);
 }
 
 .headerLinks {
-    display: flex;
+  display: flex;
 }
 
 .headerLinks-link {
-    color: var(--terciaryColor);
-    text-decoration: none;
-    margin: 0 1rem;
-    font-size: 1.25rem;
-    position: relative;
+  color: var(--terciaryColor);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.25rem;
+  position: relative;
 }
 
 .headerLinks-link::after {
-    content: '';
-    position: relative;
-    
-    display: block;
-    width: 0%;
-    height: 5px;
-    background-color: var(--secondaryColor);
-    transition: width .3s ease-in-out;
+  content: "";
+  position: relative;
+
+  display: block;
+  width: 0%;
+  height: 4px;
+  background-color: var(--secondaryColor);
+  transition: width 0.3s ease-in-out;
 }
 
 .headerLinks-link:hover.headerLinks-link::after {
-    width: 100%;
+  width: 100%;
+}
+
+.about-me {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+  margin: 5rem auto;
+}
+
+.about-me-aside {
+  border-radius: 50%;
+}
+
+.about-me-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.about-me-main {
+    width: 50%;
+}
+
+.about-me-main h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.about-me-main h2 {
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+  margin: 0;
+}
+
+.about-me-main p {
+    text-wrap: balance;
+}
+
+.about-me-buttons {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  gap: 0.75rem;
+}
+
+.about-me-main button {
+  display: inline;
+  height: 30px;
+  background-color: var(--terciaryColor);
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+  transition: background-color ease 0.2s;
+  color: var(--primaryColor);
+  font-size: 1rem;
+}
+
+.about-me-main button:hover {
+  background-color: var(--secondaryColor);
+}
+
+.about-me-link {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  color: var(--terciaryColor);
+}
+
+.about-me-link-icon {
+  height: 30px;
+  width: 30px;
+  transition: all 0.3s ease;
+}
+
+.about-me-link:hover .about-me-link-icon {
+  transform: scale(1.3);
+  color: var(--secondaryColor);
+}
+
+.projects {
+  width: 60dvw;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.projects h1 {
+    font-size: 2.25rem;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.project {
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  height: 350px;
+  border-radius: 20px;
+  background-image: url("../assets/weather-app.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.expanding-cards {
+  background-image: url("../assets/expanding-cards.png");
+}
+
+.faq-collapse {
+    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/faq-collapse.png");
+  }
+  
+  .progress-steps {
+    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/progress-steps.png");
+  }
+  
+  .split-landing-page {
+    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/split-landing-page.png");
+  }
+  
+  .hidden-search-widget {
+    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/hidden-search-widget.png");
+  }
+  
+  .background-slider {
+    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/background-slider.jpg");
+  }
+
+.project::before {
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 5;
+  opacity: 0;
+  border-radius: inherit;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  transition: all ease 0.4s;
+  height: 100%;
+  width: 100%;
+}
+
+.project:hover::before {
+  opacity: 0.7;
+}
+
+.project-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  width: 90%;
+  left: 20px;
+  opacity: 0;
+  transition: all ease 0.5s;
+  z-index: 10;
+}
+
+.project:hover .project-text {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #f2f6f8;
+  margin: 1rem 0;
+}
+
+.project-icon {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  height: 20px;
+  color: white;
+  opacity: 0;
+  transition: all ease 0.5s;
+  height: 30px;
+  width: 30px;
+  z-index: 10;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.project-icon > svg {
+  height: 30px;
+  width: 30px;
+  transition: all ease 0.4s;
+}
+
+.project-icon:hover.project-icon > svg {
+  opacity: 0.6;
+  scale: 1.2;
+}
+
+.project:hover .project-icon {
+  opacity: 1;
 }
