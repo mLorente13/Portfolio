@@ -118,8 +118,10 @@ body {
   gap: 0.75rem;
 }
 
-.about-me-main button {
-  display: inline;
+.about-me-cvButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   height: 30px;
   background-color: var(--terciaryColor);
   cursor: pointer;
@@ -130,9 +132,11 @@ body {
   transition: background-color ease 0.2s;
   color: var(--primaryColor);
   font-size: 1rem;
+  text-decoration: none;
+  padding: 0 10px;
 }
 
-.about-me-main button:hover {
+.about-me-cvButton:hover {
   background-color: var(--secondaryColor);
 }
 
