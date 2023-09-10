@@ -196,23 +196,23 @@ body {
 }
 
 .faq-collapse {
-    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/faq-collapse.png");
+    background-image: url("../assets/faq-collapse.png");
   }
   
   .progress-steps {
-    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/progress-steps.png");
+    background-image: url("../assets/progress-steps.png");
   }
   
   .split-landing-page {
-    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/split-landing-page.png");
+    background-image: url("../assets/split-landing-page.png");
   }
   
   .hidden-search-widget {
-    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/hidden-search-widget.png");
+    background-image: url("../assets/hidden-search-widget.png");
   }
   
   .background-slider {
-    background-image: url("https://mlorente13.github.io/HTML-CSS-JS-projects/assets/background-slider.jpg");
+    background-image: url("../assets/background-slider.png");
   }
 
 .project::before {
