@@ -300,6 +300,26 @@ body {
   opacity: 1;
 }
 
+.projects footer {
+  margin: 3rem;
+  text-align: center;
+}
+
+.projects footer a {
+  text-decoration: none;
+  border: 2px solid var(--secondaryColor);
+  border-radius: 20px;
+  padding: .5rem 1rem;
+  color: var(--terciaryColor);
+  transition: all ease .3s;
+  font-weight: bold;
+}
+
+.projects footer a:hover {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+
 .education {
   position: relative;
   width: 60%;
