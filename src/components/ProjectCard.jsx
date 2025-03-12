@@ -20,7 +20,7 @@ export default function ProjectCard({
                         <a
                             href={link}
                             key={link}
-                            className="flex items-center gap-2 p-2 rounded-md border-2 text-blue-500"
+                            className="flex items-center gap-2 p-2 rounded-md border-2 text-blue-500 hover:bg-blue-500/10 hover:border-blue-500/50 duration-200"
                         >
                             {index === 0 ? (
                                 <>
