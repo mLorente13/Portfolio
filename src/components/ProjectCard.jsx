@@ -75,8 +75,8 @@ export default function ProjectCard({
                     ))}
                 </header>
                 <section className="flex flex-wrap gap-2">
-                    <h2 className="text-2xl font-bold">{title}</h2>
-                    <p>{description}</p>
+                    <h2 className="w-full text-2xl font-bold">{title}</h2>
+                    <p className="w-full">{description}</p>
                     {tags.map((tag, index) => (
                         <span
                             className={
