@@ -10,11 +10,11 @@ export default function ProjectCard({
     return (
         <article className="flex flex-wrap">
             <img
-                className="rounded-t-lg md:rounded-l-lg mx-auto w-full sm:w-1/2"
+                className="rounded-t-lg md:rounded-tr-none md:rounded-l-lg mx-auto w-full sm:w-1/2"
                 src={image}
                 alt={title}
             />
-            <section className="rounded-b-lg md:rounded-r-lg w-full sm:w-1/2 box-border mx-auto flex justify-between flex-col gap-2 p-5 bg-gray-950/60">
+            <section className="rounded-b-lg md:rounded-bl-none md:rounded-r-lg w-full sm:w-1/2 box-border mx-auto flex justify-between flex-col gap-2 p-5 bg-gray-950/60">
                 <header className="flex items-center justify-end gap-4">
                     {links.map((link, index) => (
                         <a

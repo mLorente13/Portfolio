@@ -1,11 +1,11 @@
 export default function Homepage() {
     return (
         <main className="pt-8 pb-24 md:m-0 flex flex-col items-center justify-center min-h-screen">
-            <header className="flex flex-wrap justify-center gap-3 w-full md:2/3 mx-auto text-center pb-10">
-                <h1 className="w-5/6 mx-auto text-7xl sm:text-8xl font-bold">
+            <header className="flex flex-wrap justify-center gap-3 w-5/6 md:1/2 mx-auto text-center pb-10">
+                <h1 className="w-full mx-auto text-7xl sm:text-8xl font-bold">
                     Hi I<span className="text-orange-400">'</span>m Marc
                 </h1>
-                <h2 className="w-5/6 mx-auto text-xl sm:text-2xl font-bold text-orange-300">
+                <h2 className="w-full mx-auto text-xl sm:text-2xl font-bold text-orange-300">
                     Frontend Web Developer from Spain
                 </h2>
                 <section className="flex flex-wrap gap-3 w-5/6 mx-auto">
@@ -57,7 +57,7 @@ export default function Homepage() {
                     </a>
                 </section>
             </header>
-            <section className="w-5/6 md:w-2/3 mx-auto">
+            <section className="w-5/6 md:w-1/2 mx-auto">
                 <h3 className="text-5xl font-bold">
                     About<span className="text-orange-400">.</span>
                 </h3>
