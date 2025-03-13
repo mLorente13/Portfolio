@@ -11,7 +11,7 @@ export default function Homepage() {
                 <section className="flex flex-wrap gap-3 w-5/6 mx-auto">
                     <a
                         href="mailto:mlorente2005@gmail.com"
-                        className="w-full sm:w-auto flex gap-2 justify-center items-center sm:ms-auto text-lg font-semibold text-white bg-orange-400 rounded-lg px-3 py-2 hover:bg-orange-400/90 duration-200"
+                        className="w-full sm:w-auto flex gap-2 justify-center items-center sm:ms-auto text-lg font-semibold text-white bg-orange-500/10 border-2 border-orange-500 rounded-lg px-3 py-2 hover:bg-orange-500/30 duration-200"
                     >
                         Contact me
                         <svg
@@ -34,7 +34,7 @@ export default function Homepage() {
                     <a
                         href="/Marc_Lorente_Tur-CV.pdf"
                         download
-                        className="w-full sm:w-auto flex justify-center gap-2 items-center sm:me-auto text-lg font-semibold text-white bg-orange-400 rounded-lg px-3 py-2 hover:bg-orange-400/90 duration-200"
+                        className="w-full sm:w-auto flex justify-center gap-2 items-center sm:me-auto text-lg font-semibold text-white bg-orange-500/10 border-2 border-orange-500 rounded-lg px-3 py-2 hover:bg-orange-500/30 duration-200"
                     >
                         Download CV
                         <svg
