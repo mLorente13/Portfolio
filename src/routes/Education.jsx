@@ -24,9 +24,9 @@ export default function Education() {
         },
     ];
     return (
-        <main className="w-11/12 lg:w-2/3 2xl:w-1/2 mx-auto flex flex-col flex-wrap pt-15 pb-30 md:py-22 min-h-screen">
-            <section className="mx-auto w-full bg-slate-900/60 p-3 rounded-lg">
-                <h1 className="w-full text-6xl">
+        <main className="w-11/12 lg:w-2/3 2xl:w-1/2 mx-auto flex flex-col justify-center flex-wrap pt-15 pb-30 md:py-22 min-h-screen">
+            <section className="mx-auto w-full bg-gray-500/30 p-3 rounded-lg">
+                <h1 className="w-full font-bold text-5xl">
                     Formation<span className="text-orange-400">.</span>
                 </h1>
                 <section className="m-3 border-l-2">
