@@ -38,11 +38,11 @@ export default function Navbar() {
             <header className="flex items-center justify-center">
                 <nav className="fixed md:h-10 z-10 bottom-10 w-[90%] md:top-5 flex items-center mx-auto text-center bg-gray-100/50 backdrop-blur-md rounded-xl md:w-3/4 lg:w-2/5">
                     <ul className="flex w-full p-0 m-0">
-                        <li>
+                        <li className="w-1/4">
                             <Link
                                 id="about"
                                 to="/"
-                                className="z-10 flex items-center justify-center w-1/4 py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
+                                className="z-10 flex items-center justify-center w-full py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                                 onClick={(e) => {
                                     setActiveLink(e.target.id);
                                 }}
@@ -73,11 +73,11 @@ export default function Navbar() {
                                 )}
                             </Link>
                         </li>
-                        <li>
+                        <li className="w-1/4">
                             <Link
                                 id="projects"
                                 to="/projects"
-                                className="flex items-center justify-center w-1/4 py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
+                                className="flex items-center justify-center w-full py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                                 onClick={(e) => {
                                     setActiveLink(e.target.id);
                                 }}
@@ -109,11 +109,11 @@ export default function Navbar() {
                                 )}
                             </Link>
                         </li>
-                        <li>
+                        <li className="w-1/4">
                             <Link
                                 id="education"
                                 to="/education"
-                                className="flex items-center justify-center w-1/4 py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
+                                className="flex items-center justify-center w-full py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                                 onClick={(e) => {
                                     setActiveLink(e.target.id);
                                 }}
@@ -144,11 +144,11 @@ export default function Navbar() {
                                 )}
                             </Link>
                         </li>
-                        <li>
+                        <li className="w-1/4">
                             <Link
                                 id="contact"
                                 to="mailto:mlorente2005@gmail.com"
-                                className="flex items-center justify-center w-1/4 py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
+                                className="flex items-center justify-center w-full py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                                 onClick={(e) => {
                                     setActiveLink(e.target.id);
                                 }}
