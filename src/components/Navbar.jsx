@@ -140,7 +140,7 @@ export default function Navbar() {
                         </Link>
                         <Link
                             id="contact"
-                            to="/contact"
+                            to="mailto:mlorente2005@gmail.com"
                             className="flex items-center justify-center w-1/4 py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                             onClick={(e) => {
                                 setActiveLink(e.target.id);
