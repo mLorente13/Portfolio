@@ -10,22 +10,22 @@ export default function Projects() {
     const tags = {
         javascript: {
             name: "JavaScript",
-            class: "bg-yellow-500",
+            class: "bg-yellow-500/50",
             icon: JavaScript,
         },
         html: {
             name: "HTML",
-            class: "bg-orange-500",
+            class: "bg-orange-500/50",
             icon: HTML,
         },
         css: {
             name: "CSS",
-            class: "bg-[#264DE4]",
+            class: "bg-blue-500/50",
             icon: CSS,
         },
         tailwindcss: {
             name: "Tailwind CSS",
-            class: "bg-slate-900",
+            class: "bg-[#06B6D4]/50",
             icon: TailwindCSS,
         },
         pwa: {
