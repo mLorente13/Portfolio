@@ -66,10 +66,7 @@ export default function Education() {
                             place={item.place}
                             date={item.date}
                             description={item.description}
-                            isLast={
-                                item.date.includes("Current") ||
-                                index === education.length - 1
-                            }
+                            isLast={item.date.includes("Current")}
                         />
                     ))}
                 </section>
