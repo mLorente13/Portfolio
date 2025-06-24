@@ -1,4 +1,4 @@
-import PWA from "./icons/PWA";
+import PropTypes from "prop-types";
 
 export default function ProjectCard({
     title,
@@ -77,13 +77,13 @@ export default function ProjectCard({
                 <section className="flex flex-wrap gap-2">
                     <h2 className="w-full text-2xl font-bold">{title}</h2>
                     <p className="w-full">{description}</p>
-                    {tags.map((tag, index) => (
+                    {tags.map((tag) => (
                         <span
                             className={
                                 `flex items-center px-3 py-0.5 gap-2 rounded-2xl ` +
                                 tag.class
                             }
-                            key={index}
+                            key={tag.name}
                         >
                             <tag.icon className="h-4.5 w-4.5" />
                             {tag.name}
@@ -94,3 +94,17 @@ export default function ProjectCard({
         </article>
     );
 }
+
+ProjectCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    links: PropTypes.arrayOf(PropTypes.string).isRequired,
+    image: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            icon: PropTypes.elementType.isRequired,
+            class: PropTypes.string.isRequired,
+        })
+    ).isRequired,
+};

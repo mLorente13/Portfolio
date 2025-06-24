@@ -1,6 +1,5 @@
 import { Link, Outlet } from "react-router";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function Navbar() {
     let link = window.location.pathname.split("/")[1];
@@ -9,24 +8,31 @@ export default function Navbar() {
     }
     const [activeLink, setActiveLink] = useState(link);
     const [activeLinkPosition, setActiveLinkPosition] = useState(0);
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-    function calcActiveLinkPosition() {
+    const calcActiveLinkPosition = useCallback(() => {
         const currentLink = document.getElementById(activeLink);
         const currentLinkPosition = currentLink.offsetLeft;
         setActiveLinkPosition(currentLinkPosition);
-    }
+    }, [activeLink]);
 
     useEffect(() => {
         if (window.screen.width < 768) {
             setIsMobile(true);
         }
+        const calcActiveLinkPosition = () => {
+            const currentLink = document.getElementById(activeLink);
+            if (currentLink) {
+                const currentLinkPosition = currentLink.offsetLeft;
+                setActiveLinkPosition(currentLinkPosition);
+            }
+        };
         calcActiveLinkPosition();
-    }, [activeLink]);
+    }, [activeLink, calcActiveLinkPosition]);
 
     window.addEventListener("resize", () => {
         calcActiveLinkPosition();
-        if (window.screen.width < 768) {
+        if (window.innerWidth < 768) {
             setIsMobile(true);
         } else {
             setIsMobile(false);
@@ -45,6 +51,7 @@ export default function Navbar() {
                                 className="z-10 flex items-center justify-center w-full py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                                 onClick={(e) => {
                                     setActiveLink(e.target.id);
+                                    calcActiveLinkPosition();
                                 }}
                             >
                                 {isMobile ? (
@@ -80,6 +87,7 @@ export default function Navbar() {
                                 className="flex items-center justify-center w-full py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                                 onClick={(e) => {
                                     setActiveLink(e.target.id);
+                                    calcActiveLinkPosition();
                                 }}
                             >
                                 {isMobile ? (
@@ -116,6 +124,7 @@ export default function Navbar() {
                                 className="flex items-center justify-center w-full py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                                 onClick={(e) => {
                                     setActiveLink(e.target.id);
+                                    calcActiveLinkPosition();
                                 }}
                             >
                                 {isMobile ? (
@@ -151,6 +160,7 @@ export default function Navbar() {
                                 className="flex items-center justify-center w-full py-4 md:py-2 text-decoration-none rounded-xl font-semibold box-border text-black"
                                 onClick={(e) => {
                                     setActiveLink(e.target.id);
+                                    calcActiveLinkPosition();
                                 }}
                             >
                                 {isMobile ? (

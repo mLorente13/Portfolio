@@ -5,6 +5,7 @@ import JavaScript from "../components/icons/JavaScript";
 import TailwindCSS from "../components/icons/TailwindCSS";
 import PWA from "../components/icons/PWA";
 import Spring from "../components/icons/Spring";
+import ReactIcon from "../components/icons/React";
 
 export default function Projects() {
     const tags = {
@@ -48,9 +49,23 @@ export default function Projects() {
             class: "bg-[#FF5733]",
             icon: "",
         },
+        react: {
+            name: "React",
+            class: "bg-[#53C1DE]/20",
+            icon: ReactIcon,
+        },
     };
 
     const projects = [
+        {
+            title: "Speedtrack",
+            description:
+                "Speedtrack is a web application for booking karting sessions and keep track of your performance.",
+            id: "speedtrack",
+            links: [null, "https://speed-track.es/"],
+            image: "/speedtrack.webp",
+            tags: [tags.react, tags.tailwindcss, tags.spring],
+        },
         {
             title: "Calculator",
             description:
@@ -137,7 +152,7 @@ export default function Projects() {
     ];
 
     return (
-        <main className="w-11/12 lg:w-2/3 2xl:w-1/2 mx-auto flex flex-col flex-wrap pt-15 pb-30 md:py-22 min-h-screen">
+        <main className=" w-11/12 lg:w-2/3 2xl:w-1/2 mx-auto flex flex-col flex-wrap pt-15 pb-30 md:py-22 min-h-screen">
             <h1 className="text-5xl font-bold">
                 Projects<span className="text-orange-400">.</span>
             </h1>
